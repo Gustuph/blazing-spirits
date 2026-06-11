@@ -34,7 +34,16 @@ tw-story[tags~="lobby-background"] {  /* the tag added in step 2 */
 }
 tw-story[tags~="lobby-background"] {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/lobby.jpeg) center center / cover no-repeat fixed;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="street-background" color="purple"></tw-tag><tw-tag name="lobby-background" color="blue"></tw-tag><tw-passagedata pid="1" name="Landing" tags="" position="600,200" size="100,100">The Blazing Spirit
+}
+
+tw-story[tags~="staff-background"] {  /* the tag added in step 2 */
+  background-image: url(./images/staffroom.jpg);  /* the image added in step 1 */
+  background-size: cover;  /* cover the whole element */
+  background-repeat: no-repeat;  /* do not repeat the background image */
+}
+tw-story[tags~="staff-background"] {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/staffroom.jpg) center center / cover no-repeat fixed;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="street-background" color="purple"></tw-tag><tw-tag name="lobby-background" color="blue"></tw-tag><tw-tag name="staff-background" color="blue"></tw-tag><tw-passagedata pid="1" name="Landing" tags="" position="600,200" size="100,100">The Blazing Spirit
 By Angus Webb(link:&quot;Angus Webb&quot;) [(goto-url: &#39;https://gustuph.github.io/&#39;)
 &lt;audio src=&quot;./audio/fire.mp3&quot; autoplay loop&gt;&lt;/audio&gt;
 (if:$run is 0)[[[Begin?|First Scene]]]
@@ -81,7 +90,7 @@ He looks up at you and he tilts his head a little.
 (else-if:$tickettaker is 1)[You walk up to Dan. 
 &quot;Could you walk me through what you saw again?&quot;(click:&quot;Could you walk me through what you saw again&quot;)[&quot;It was my fourth shift. I was working the podium again. The last movie was pretty empty, just a couple that went in together, the girl was mad at the guy, and then a group of three, including you. I went on break, then a couple minutes after I came out, the wall started to scorch and a guy opened the door screaming and on fire. I ran out to my sister Melanie&#39;s car and we left.&quot;]
 [[Step Back|Lobby]]]
-</tw-passagedata><tw-passagedata pid="7" name="Staff Room" tags="" position="1225,650" size="100,100">
+</tw-passagedata><tw-passagedata pid="7" name="Staff Room" tags="staff-background" position="1225,650" size="100,100">
 
 [[A slimy looking man is failing to hold in a yawn|Security]]
 
